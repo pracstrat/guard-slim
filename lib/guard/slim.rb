@@ -66,7 +66,7 @@ module Guard
     end
 
     def context
-      @options.fetch(:context, NullContext)
+      @options.fetch(:context) || NullContext
     end
 
     def output_path(input_path)
